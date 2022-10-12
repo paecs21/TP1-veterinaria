@@ -40,17 +40,22 @@ nav{
 }
 /*modifico el orden de la lista en forma horizontal*/
 nav ul li {
-    display: inline;
+    display: inline-block;
 }
 
 /*configuro las letras de los botones del menú*/
 nav ul li a{
+    display: block;
     color: black;
     text-transform: uppercase;   /*transforma en mayusculas todas las letras*/
     text-decoration: none;      /*le quito el subrayado predeterminado de nav*/
     letter-spacing: 1px;        /*espacio entre letras*/
-    padding-left: 80px;
+    padding:4px 15px
 
+}
+
+nav ul li a:hover{
+    border-bottom: 2px solid black;
 }
 
 main{
