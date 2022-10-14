@@ -1,0 +1,44 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+header{
+    display: flex;
+    height: 125px;
+    justify-content: space-between;
+    align-items: center;
+    background: grey;
+}
+
+
+
+.logo{
+    display: flex;
+    width: 36%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    border: 2px solid rgb(208, 14, 14);
+   
+}
+.logo img{
+    height: 100%;
+    width: 60%;
+   
+}
+.cajaDeBotones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    width:100%;
+    height:100%;
+}
+
+a{
+    font-size: 30px;
+    text-decoration: none;
+    padding-right: 10px;
+}
