@@ -13,7 +13,7 @@ header{
     display: flex;
     width: 100%;
     align-items: center;
-    background: rgb(104, 101, 101);
+    background: #3C4048;
 }
 
 main{
@@ -44,6 +44,7 @@ main{
 .boton{
     display: none;
 }
+
 .cajaDeBotones{
     display: flex;
     flex-direction: row;
@@ -55,8 +56,9 @@ main{
     color: black;
     text-decoration: none;
     text-transform: uppercase;   /*transforma en mayusculas todas las letras*/
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     margin: 0px 25px;
+    font-size: 18px;
 }
 .cajaDeBotones a:hover{
     border-bottom: 2px solid black;
@@ -64,7 +66,7 @@ main{
 
 
 
-@media only screen and (max-width: 860px)
+@media only screen and (max-width: 740px)
 {
    header{
         flex-direction: column;
@@ -73,6 +75,7 @@ main{
         justify-content: space-between;
         padding-right: 40px;
         width: 100%;
+        border-bottom: 1px solid gray ;
     }
     .logo img{
         padding-left: 60px;
@@ -80,10 +83,13 @@ main{
     }
     .boton{
         border: 0px;
-        background: rgb(114, 114, 114);
+        background: #3C4048;
         display: flex;
+        color: #B2B2B2;
+        font-size: 30px;
         justify-content: center;
     }
+    
     .menu{
         flex-direction: column;
     }
@@ -97,7 +103,7 @@ main{
         text-align: center;        
     }
     .cajaDeBotones a{
-        font-size: 13px;
+        font-size: 15px;
         margin: 0px;
         border-bottom: 1px solid gray ;
     }
