@@ -10,7 +10,7 @@
     z-index: -1;
     border: 2px solid black;
 }
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 350px) {
     .contenedor{
         width: 107%;
     }
