@@ -5,11 +5,8 @@
 
 body{
     position: relative;
-    left: 0%;
-    right: 0%;
     display: flex;
     flex-direction: column;
-    border: 2px solid olivedrab;
     width: 100%;
 }
 
@@ -22,7 +19,6 @@ header{
     background-position: center;
     background-attachment: contain;
     background-size: cover;
-    border: 2px solid black;
 }
 
 .logo{
@@ -192,10 +188,14 @@ footer p{
     position: relative;
     width: 100%;
     border-radius: 6px;
-    overflow: scroll;
+    overflow: hidden;
     z-index: -1;
 }
+.caja_infinity{
+    display: flex;
+    margin: 0px 40px;
 
+}
 .infinity{
     display: flex;
     display: 100%;
