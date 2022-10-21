@@ -4,18 +4,20 @@
 }
 
 body{
+    background: url(../imagenes/fondos/paws-6757808_1280.png);
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 100%;
 }
+ /*------------------------------------------------MENÚ-----------------------------------------------------------------------*/
+
 
 header{
     position: fixed;
     display: flex;
     width: 100%;
     align-items: center;
-   background: url(../imagenes/fondo4.jpg);
+   background: url(../imagenes/fondos/fondo4.jpg);
     background-position: center;
     background-attachment: contain;
     background-size: cover;
@@ -66,7 +68,7 @@ header{
 .cajaDeBotones a:hover{
     border-bottom: 2px solid black;
 }
-
+/*-----------------------------ESPACIO PROVISIONAL PARA SEPARAR EL MENÚ CON EL FOOTER ----------------------------------------*/
 .vacio{
     height: 1000px;
     width: 100%;
@@ -123,13 +125,13 @@ header{
 }
 
 
-/*-----------------footer----------------------------*/
+/*--------------------------------------------------------FOOTER-----------------------------------------------------------------*/
 
 
 .pieDePagina{
     position: static;
     display: flex;
-   background: url(../imagenes/catblack.jpg);
+   background: url(../imagenes/fondos/catblack.jpg);
     background-position: bottom;
     background-attachment: contain;
     background-size: cover;
@@ -180,20 +182,23 @@ footer p{
 
 
 
-/*----------------- SERVICIOS----------------------------*/
+/*---------------------------------------------------- SERVICIOS ------------------------------------------------------*/
+
 .vacio1{
     height: 125px;
 }
+
 .contenedor{
     position: relative;
     width: 100%;
-    border-radius: 6px;
+    border-radius: 20px;
     overflow: hidden;
     z-index: -1;
 }
 .caja_infinity{
     display: flex;
-    margin: 0px 40px;
+    height: 650px;
+    margin: 0px 20px;
 
 }
 .infinity{
@@ -202,7 +207,7 @@ footer p{
     transform: translate3d(0,0,0);
     transition: all 600ms;
     animation-name: miAnimacion;
-    animation-duration: 8s;
+    animation-duration: 10s;
     animation-duration: alternate ;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
@@ -221,50 +226,80 @@ footer p{
 
 @keyframes miAnimacion {
 
-    25%{
+    20%{
         transform: translate3d(0,0,0);
     }
-    50%{
+    40%{
         transform: translate3d(-100%,0,0);
     }
-    75%{
+    60%{
         transform: translate3d(-200%,0,0);
     }
-    100%{
+    80%{
         transform: translate3d(-300%,0,0);
     }
-   
+    100%{
+        transform: translate3d(-400%,0,0);
+    }
 }
 
 
 .contenido{
     display: flex;
-    width: 100%;
     flex-wrap: wrap;
-    padding-bottom: 30px;
-    margin-top: 20PX;
-    border: 2px solid red;
+    margin-top: 30PX;
 }
  .main{
     display: flex;
     flex-direction: row;
-    flex: 3;
+    flex: 5;
     flex-wrap: wrap;
-
+    
  }
+
 .caja{
     flex: 40%;     /*toma el 40% del tamaño del padre*/
     display: flex;
+    height: 300px;
+    margin: 0px 20px 25px 20px;
+    background: white;
+    border: 5px solid black;
+}
+.caja1{
+    display: flex;
+    flex: 100%;
+    margin: 0px 20px 25px 20px;
+    justify-content: center;
+}
+.caja1 div{
+    width: 40%;
+    background: white;
+}
+.caja1 h1{
+    
+    font-style:italic;
+    font-weight:bold ;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.img_caja{
+    flex: 2;
+}
+.img_caja img{
+    height: 100%;
     width: 100%;
 }
-section img{
-    height: 100px;
-    width: 100px;
+.descripción_servicio{
+    flex: 1;
 }
+
 .publicidad{
     display: flex;
     flex: 1;
     flex-direction: column;
+    background: white;
     margin-left: 10px;
 }
 
