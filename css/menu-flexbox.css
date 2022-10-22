@@ -281,7 +281,7 @@ footer p{
         flex: 100%;
         justify-content: space-around;
         flex-direction: column;
-        height: 350px;
+        height: 360px;
     }    
     
     .caja1 h1{    
@@ -289,6 +289,7 @@ footer p{
     }
 
     .descripción_servicio{
+        height: 100%;
         margin-top: 10px;
         text-align: center;
         border: 2px solid black;
