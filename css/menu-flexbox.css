@@ -346,12 +346,11 @@ h2{
     }
     .logo{
         justify-content: space-between;
-        padding-right: 30px;
         width: 100%;
         border-bottom: 1px solid gray ;
     }
     .logo img{
-        padding-left: 60px;
+        margin-left: 20px;
        
     }
     .boton{
@@ -360,6 +359,7 @@ h2{
         display: flex;
         font-size: 30px;
         justify-content: center;
+        margin-right: 20px;
     }
     
     .menu{
