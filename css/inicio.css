@@ -68,6 +68,7 @@ main .sobre-nosotros{
     background: #f2f2f2;
     margin-top: 5%;
     border: dotted;
+    
 }
 
 /* para acomodar las imagenes */
@@ -83,7 +84,7 @@ main .sobre-nosotros{
     width: 40%;
     margin-bottom: 10px;
     overflow: hidden;
-    position: relative;
+    position: relative;    
 } 
 
 /* ajustar la vista de las imagenes */

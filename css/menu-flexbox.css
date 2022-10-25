@@ -21,6 +21,7 @@ header{
     background-position: center;
     background-attachment: contain;
     background-size: cover;
+    z-index: 2;
 }
 
 .logo{
