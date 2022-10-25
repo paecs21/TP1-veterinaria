@@ -1,0 +1,178 @@
+/* para ajustar el contenedor de todos,misma configuracion en comun */
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* para ajustar el titulo en comun de todos */
+.titulo {
+    color: #07571f;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* sobre nosotros */
+
+main .sobre-nosotros{
+    background: rgb(114, 202, 143);
+    margin-top: 110px;
+    padding: 30px 0 60px 0;
+    border: dashed;
+    
+}
+.contenedor-sobre-nosotros{
+    background: aqua;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-about-us{
+    width: 52%; 
+}
+
+.sobre-nosotros .contenido-textos{
+    width: 48%; 
+}
+
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+
+.contenido-textos h3 span{
+    background: #4d0686;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* Internados */
+
+/* contenedor internados el grande */
+.internados{
+    background: #f2f2f2;
+    margin-top: 5%;
+    border: dotted;
+}
+
+/* para acomodar las imagenes */
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+/* ajustar ancho y tamaño imagen */
+.imagen-port{
+    width: 40%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+} 
+
+/* ajustar la vista de las imagenes */
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Clientes */
+
+/* contenedor principal de clientes */
+.clientes{
+    background: burlywood;
+    margin-top: 50px;
+    border: inset;
+}
+
+/* alienando la seccion de clientes */
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* cuadro de cada cliente-su contenedor */
+.cards .card{
+    background: #4d0686;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+/* ajustando imagen del cliente */
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+/* texto del cliente su color */
+.cards .card > .contenido-texto-card{
+    width: 60%;
+    color: rgb(230, 81, 118);
+}
+
+.cards .card > .contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+
+/*  datos de interes */
+
+/* contenedor principal de datos-interes */
+.datos-interes{
+    margin-top: 50px;
+    background: #a08c8c;
+    padding-bottom: 30px;
+    border: ridge;
+}
+
+/* contenedor de cada dato especifico */
+.datos-local{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* centrando texto del dato especifico */
+.dato{
+    width: 28%;
+    text-align: center;
+}
+
+.dato h3{
+    margin: 10px 0;
+}
+
+.dato p{
+    font-weight: 300;
+    text-align: justify;
+}
+

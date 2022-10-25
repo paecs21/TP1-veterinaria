@@ -1,6 +1,8 @@
-.vacio{    /*este espacio es solo para difenciar el menú con el pie de pagina , debemos quitarlo una vez agreguemos contenido*/
+/*
+.vacio{   
     height: 1000px;
-}
+} 
+*/
 
 .pieDePagina{
     display: flex;
