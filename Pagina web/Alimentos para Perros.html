@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/94999b235b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="../css/menu-flexbox.css">
     <style>
         .contenedor{
             margin-right: 15px; justify-content: center;
@@ -14,6 +16,43 @@
     </style>
 </head>
 <body>
+    <header ><!--menú-->
+    <div class="logo" >
+        <img src="../imagenes/logo.jpg" >
+        <button id="boton1" class="boton"><i class="fa-solid fa-bars" class="icono"></i></button>
+    </div>
+    <div class="menu">
+        <nav id="nuevacaja" class="cajaDeBotones" >
+                <a href="../index.html">Inicio</a>
+                <a href="../html/servicios.html">Servicios</a>
+
+                <ul class="lista" >
+                    <li><a href="#">Productos</a>
+                        <ul class="producto">
+                            <li><a href="#">PERROS</a>
+                                <ul class="producto_perro texto">
+                                    <li><a href="Alimentos para Perros.html">COMIDA</a></li>
+                                    <li><a href="#">CAMA</a></li>
+                                    <li><a href="Collares Gatos.html">COLLAR</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">GATOS</a>
+                                <ul class="producto_gatos texto">
+                                    <li><a href="#">COMIDA</a></li>
+                                    <li><a href="#">CAMA</a></li>
+                                    <li><a href="#">COLLAR</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul></ul>
+                    </li>
+                </ul>
+                
+                <a href="../html/contacto.html">Contacto</a> 
+        </nav>
+
+    </div>   
+</header> 
 
     <div class="contenedor"> 
         <figure>
@@ -58,7 +97,7 @@
 
             <figure>
                     <img class="Img2" src="Comida chota perro.jpg" alt="Comida Premium" height="225">
-                    <div class="capa"
+                    <div class="capa">
                     <p class="texto1"> Dogui "Adultos" 10kg</p>
                     <p>$3.000</p>
                 </div>
@@ -68,7 +107,28 @@
 
         </div>
 
-
+        <div class="pieDePagina">
+            <footer>
+                <div class="cont">
+                    <p>productos</p>
+                    <p>servicios</p>
+                    <p>contacto</p>
+                </div>
+    
+                <div class="social">
+                    <p>facebook</p>
+                    <p>instagram</p>
+                    <p>twitter</p>
+                </div>
+                <div class="contacto">
+                    <p>direccion</p>
+                    <p>telefono</p>
+                    <p>email</p>
+                </div>
+               
+            </footer>
+        </div>
+         <script src="javaScript/abrir_menú.js"></script>  
 
     
 

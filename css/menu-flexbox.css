@@ -17,7 +17,6 @@ header{
     position: fixed;
     display: flex;
     width: 100%;
-    align-items: center;
    background: url(../imagenes/fondos/fondo4.jpg);
     background-position: center;
     background-attachment: contain;
@@ -39,8 +38,7 @@ header{
 
 .menu{
     display: flex;
-    width: 100%;
-      
+    width: 100%;   
 }
 
 .boton{
@@ -52,6 +50,7 @@ header{
     flex-direction: row;
     width: 100%;
     justify-content: center;
+    margin-top: 30px;
     
 }
 .cajaDeBotones a{
@@ -60,10 +59,43 @@ header{
     text-transform: uppercase;   /*transforma en mayusculas todas las letras*/
     letter-spacing: 1px;
     margin: 0px 25px;
-    font-size: 18px;
+    font-size: 22px;
 }
 .cajaDeBotones a:hover{
     border-bottom: 2px solid black;
+}
+.producto{
+    display: flex;
+    display: none;
+    align-content: center;
+}
+li a{
+    text-decoration: none;
+    list-style: none;
+}
+li{
+    text-align: center;
+}
+
+.producto li{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.producto li a{
+    font-size: 15px;
+}
+.texto{
+    display: none;
+    flex-direction: column;
+}
+.texto li a{
+    margin-right: 0%;
+    font-size: 12px;
+}
+.lista li:hover > ul{
+
+    display: flex;
 }
 /*-----------------------------ESPACIO PROVISIONAL PARA SEPARAR EL MENÚ CON EL FOOTER ----------------------------------------*/
 .vacio{
@@ -93,38 +125,30 @@ footer{
     display: flex;
     width: 100%;
 }
-footer div{
-    flex:auto
-}
-
-.cont{
+.contacto{
     display: flex;
+    flex: 2;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-
+    margin-left: 10px;
 }
 
 .social{
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    flex: 3;
+    align-items: center;
+    justify-content: flex-start;
+    }
+.tex-icono{
+    margin-left: 15px;
 }
-.contacto{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-
-}
-
 footer p{
     color: white;
-    font-size: 20px;
+    font-size: 22px;
 }
 
-.cont p{
+.contacto p{
     margin-left: 30px;
 }
 
@@ -200,18 +224,17 @@ footer p{
  .main{
     display: flex;
     flex-direction: row;
-    flex: 5;
+    flex: 4;
     flex-wrap: wrap;
-    
  }
 
 .caja{
     flex: 40%;     /*toma el 40% del tamaño del padre*/
     display: flex;
-    height: 300px;
+    height: 220px;
     margin: 0px 20px 25px 20px;
     background: white;
-    border: 2px solid black;
+    border: 3px solid black;
     border-radius: 10px ;
 }
 .caja1{
@@ -232,17 +255,28 @@ footer p{
 }
 
 .img_caja{
-    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex:1;
 }
 .img_caja img{
     border-radius: 10px ;
-    height: 100%;
     width: 100%;
 }
 .descripción_servicio{
     flex: 1;
 }
-
+h2{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 22px;
+}
+.descripción_servicio p{
+    margin: 10px 10px 0px 10px;
+    text-align:left;
+    font-size: 20px;
+}
 .publicidad{
     display: flex;
     flex: 1;
@@ -252,8 +286,8 @@ footer p{
 }
 
 .publi{
-    height: 400px;
-    border: 1px solid black;
+    display: flex;
+    height: 300px;
     border-radius: 10px;
 }
 .publi1{
@@ -264,65 +298,54 @@ footer p{
 
 
 /*******************BREAK POINTS******************/
-@media only screen and (max-width: 400px){
-
-    /*.logo img{
-        height: 50px ;  
-    }*/
-    .contenido{
-        flex-direction: column;
-        margin-top: 30PX;
+@media only screen and (max-width: 1200px){
+    .caja{
+        flex:220px;
+        display: flex;
+    }
+    
+    .caja1{
+        flex: 1;
     }
     .img_caja img{
-        height: 244px;
-    }    
-    .caja{
-        border: none;
-        flex: 100%;
-        justify-content: space-around;
-        flex-direction: column;
-        height: 360px;
-    }    
-    
-    .caja1 h1{    
-        font-size: 26px;
-    }
-
-    .descripción_servicio{
         height: 100%;
-        margin-top: 10px;
-        text-align: center;
-        border: 2px solid black;
-        border-radius: 10px;
     }
-    
-    .publicidad{
-        margin: 20px 20px;
-         justify-content: space-between;
+    .main{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        flex: 2;
+     }
+     .publicidad{
+        flex: 1;
     }
-    
-    .publi{
-        height: 350px;
-        margin-bottom: 20px;
-    }
-    .publi1{
-        height: 350px;
-        
-    }
-    
-}   
-@media only screen and (max-width: 740px){
-
 }
 
-@media only screen and (max-width: 740px)
+@media only screen and (max-width: 820px){
+    .cajaDeBotones a{
+        font-size: 18px;
+    }
+    .contenido{
+        flex-direction: column;
+    }
+    .publicidad{
+        margin:40px 20px;
+    }
+    .publi{
+        flex: 350px;
+        align-items: center;
+        margin: 10px 0px;
+    }
+
+    
+}
+@media only screen and (max-width: 720px)
 {
    header{
         flex-direction: column;
     }
     .logo{
         justify-content: space-between;
-        padding-right: 40px;
+        padding-right: 30px;
         width: 100%;
         border-bottom: 1px solid gray ;
     }
@@ -332,9 +355,8 @@ footer p{
     }
     .boton{
         border: 0px;
-        background: #3C4048;
+        background: none;
         display: flex;
-        color: #B2B2B2;
         font-size: 30px;
         justify-content: center;
     }
@@ -343,8 +365,51 @@ footer p{
         flex-direction: column;
     }
     .cajaDeBotones{
+        margin-top: 0px;
         display: none;
     }
+    .lista{
+        border-bottom: 1px solid gray ;
+    }
+
+    .producto{
+        text-align: center;
+        border-top:1px solid gray;
+       
+        }
+    .producto li{
+        flex: 100%;
+        margin-top: 5px;
+    }
+    .texto{
+        border-left: 1px solid gray;
+        border-right: 1px solid gray;
+    }
+    /*
+    li{
+        text-align: center;
+    }
+
+    .producto li{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .producto li a{
+        font-size: 15px;
+    }
+    .texto{
+        display: none;
+        flex-direction: column;
+    }
+    .texto li a{
+        margin-right: 0%;
+        font-size: 12px;
+    }
+    .lista li:hover > ul{
+
+        display: flex;
+}*/
     .open
     {
         display: flex;
@@ -357,8 +422,63 @@ footer p{
         border-bottom: 1px solid gray ;
     }
     .cajaDeBotones a:hover{
-        
         border: 0px;
         background: gray;
     }
+    .contacto{
+        flex: 2;
+    }
+    .social{
+
+        flex: 1.5;
+        }
+    footer p{
+        font-size: 18px;
+    }
 }
+@media only screen and (max-width: 450px){
+
+    .contenido{
+        flex-direction: column;
+        margin-top: 30PX;
+    } 
+    .caja{
+        border: none;
+        flex: 100%;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 360px;
+    }    
+    
+    .caja1 h1{    
+        font-size: 26px;
+    }
+    .caja h2{
+        margin-top: 0px;
+        font-size: 18px;
+    } 
+    .caja p{
+        margin:0px 10px;
+        font-size: 14px;
+    } 
+    .descripción_servicio{
+        margin-top: 10px;
+        text-align: center;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+        
+    .icono{
+        margin-left: 20px;
+       
+    }
+    .tex-icono{
+        display: none;
+    }
+    footer p{
+        font-size: 15px;
+    }
+    
+}   
+
+
