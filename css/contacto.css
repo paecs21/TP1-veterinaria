@@ -1,0 +1,64 @@
+.container_contacto{
+    display: flex;
+    height: 500px;
+    justify-content: space-around;
+}
+.map{
+    display: flex;
+    width: 400px;
+    margin: 40px 0px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+iframe{
+    width: 100%;
+    border-radius: 10px;
+}
+.box-contacto{
+    background: url(../imagenes/fondos/fondo-contacto.jpg);
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    border-radius: 10px;
+}
+ .box-contacto h1{
+    margin-top: 5px;
+    text-align: center;
+    color: azure;
+ }
+
+.container-formulario{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 15px;
+}
+.caja-form{
+    display: flex;
+    margin-bottom: 20px;
+}
+.caja-form label{
+    flex-basis: 80px;
+    color: white;
+}
+.caja-form input{
+    border: none;
+    border-bottom: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgb(0, 111, 128);
+    flex: 1;
+}
+.caja-form textarea{
+    flex: 1;
+    border: none;
+    border-bottom: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgb(0, 111, 128);
+}
+ .caja-form button{
+    flex: 1;
+    border: none;
+    padding: 5px 0px;
+    border-radius: 5px;
+    margin-top: 30px;
+    box-shadow: 0 0 10px rgb(0, 111, 128);
+ }
