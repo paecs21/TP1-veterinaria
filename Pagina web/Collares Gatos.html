@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="../css/menu-flexbox.css">
     <style>
         .contenedor{
             margin-right: 15px; justify-content: center;
@@ -14,6 +15,43 @@
     </style>
 </head>
 <body>
+    <header ><!--menú-->
+        <div class="logo" >
+            <img src="../imagenes/logo.jpg" >
+            <button id="boton1" class="boton"><i class="fa-solid fa-bars" class="icono"></i></button>
+        </div>
+        <div class="menu">
+            <nav id="nuevacaja" class="cajaDeBotones" >
+                    <a href="../index.html">Inicio</a>
+                    <a href="../html/servicios.html">Servicios</a>
+    
+                    <ul class="lista" >
+                        <li><a href="#">Productos</a>
+                            <ul class="producto">
+                                <li><a href="#">PERROS</a>
+                                    <ul class="producto_perro texto">
+                                        <li><a href="Alimentos para Perros.html">COMIDA</a></li>
+                                        <li><a href="Comederos para tus Perros.html">ACCESORIOS</a></li>
+                                        <li><a href="Collares.html">COLLARES</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">GATOS</a>
+                                    <ul class="producto_gatos texto">
+                                        <li><a href="Alimentos para Gatos.html">COMIDA</a></li>
+                                        <li><a href="Comederos para tus Gatos.html">ACCESORIOS</a></li>
+                                        <li><a href="Collares Gatos.html">COLLARES</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul></ul>
+                        </li>
+                    </ul>
+                    
+                    <a href="../html/contacto.html">Contacto</a> 
+            </nav>
+    
+        </div>   
+    </header>
     <div class="contenedor"> 
         <figure>
                 <img class="Collar 1"  src="Collar gato.jpg" alt="Collar 1" height="225">
@@ -54,6 +92,28 @@
     <p>$4.500</p>
 </div>
 </figure>
+    </div>
+
+    <div class="pieDePagina">
+        <footer>
+            <div class="cont">
+                <p>productos</p>
+                <p>servicios</p>
+                <p>contacto</p>
+            </div>
+
+            <div class="social">
+                <p>facebook</p>
+                <p>instagram</p>
+                <p>twitter</p>
+            </div>
+            <div class="contacto">
+                <p>direccion</p>
+                <p>telefono</p>
+                <p>email</p>
+            </div>
+           
+        </footer>
     </div>
 </body>
 </html>

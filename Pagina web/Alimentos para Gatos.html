@@ -6,34 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="../css/menu-flexbox.css">
     <style>
         .contenedor{
             margin-right: 20px; justify-content: center;
             
         }
-        .CatPro{
-            margin-right: 30px;
-            margin-left: 20px;
-        }
-        .ProPlan{
-            margin-left: 10px;
-            margin-right: 30px;
-        }
-        .Excellent{
-            margin-right: 60px;
-            margin-left: 10px;
-        }
-        .CatChow{
-            margin-right: 40px;
-            margin-left: 10px;
-        }
-        .Gati{
-            margin-right: 25px;
-            margin-left: 30px;
-        }
     </style>
 </head>
 <body>
+    <header ><!--menú-->
+        <div class="logo" >
+            <img src="../imagenes/logo.jpg" >
+            <button id="boton1" class="boton"><i class="fa-solid fa-bars" class="icono"></i></button>
+        </div>
+        <div class="menu">
+            <nav id="nuevacaja" class="cajaDeBotones" >
+                    <a href="../index.html">Inicio</a>
+                    <a href="../html/servicios.html">Servicios</a>
+    
+                    <ul class="lista" >
+                        <li><a href="#">Productos</a>
+                            <ul class="producto">
+                                <li><a href="#">PERROS</a>
+                                    <ul class="producto_perro texto">
+                                        <li><a href="Alimentos para Perros.html">COMIDA</a></li>
+                                        <li><a href="Comederos para tus Perros.html">ACCESORIOS</a></li>
+                                        <li><a href="Collares.html">COLLARES</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">GATOS</a>
+                                    <ul class="producto_gatos texto">
+                                        <li><a href="Alimentos para Gatos.html">COMIDA</a></li>
+                                        <li><a href="Comederos para tus Gatos.html">ACCESORIOS</a></li>
+                                        <li><a href="Collares Gatos.html">COLLARES</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul></ul>
+                        </li>
+                    </ul>
+                    
+                    <a href="../html/contacto.html">Contacto</a> 
+            </nav>
+    
+        </div>   
+    </header> 
     <div class="contenedor"> 
         
         <figure>
@@ -69,12 +87,36 @@
             </figure>
 
             <figure>
-                    <img class="Gati" src="comida chota gato.jpg" alt="Comida Premium" height="225">
+                    <img class="Gati" src="comida muy barata gato.jpg" alt="Comida Premium" height="225">
                     <div class="capa">
                     <p class="texto1">Purina Gati "Sabores caseros" 8kg</p>
                     <p>$3.100</p>
                 </div>
             </figure>
+    </div>
+
+            <div class="pieDePagina">
+                <footer>
+                    <div class="cont">
+                        <p>productos</p>
+                        <p>servicios</p>
+                        <p>contacto</p>
+                    </div>
+        
+                    <div class="social">
+                        <p>facebook</p>
+                        <p>instagram</p>
+                        <p>twitter</p>
+                    </div>
+                    <div class="contacto">
+                        <p>direccion</p>
+                        <p>telefono</p>
+                        <p>email</p>
+                    </div>
+                </footer>
+            </div>
+
+<script src="javaScript/abrir_menú.js"></script>  
 
 </body>
 </html>
