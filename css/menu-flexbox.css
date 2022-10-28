@@ -51,8 +51,7 @@ header{
     flex-direction: row;
     width: 100%;
     justify-content: center;
-    margin-top: 30px;
-    
+    margin: 35px 0px;    
 }
 .cajaDeBotones a{
     color: white;
@@ -63,7 +62,7 @@ header{
     font-size: 22px;
 }
 .cajaDeBotones a:hover{
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid gray;
 }
 .producto{
     display: flex;
@@ -366,7 +365,7 @@ h2{
         flex-direction: column;
     }
     .cajaDeBotones{
-        margin-top: 0px;
+        margin: 0px 0px;
         display: none;
     }
     .lista{
