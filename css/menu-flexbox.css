@@ -252,6 +252,7 @@ footer p{
     font-size: 40px;
     text-align: center;
     margin-bottom: 10px;
+    padding: 5px 0px;
 }
 
 .img_caja{
@@ -385,31 +386,9 @@ h2{
         border-left: 1px solid gray;
         border-right: 1px solid gray;
     }
-    /*
-    li{
-        text-align: center;
+    .caja1 h1{
+        font-size: 37px;
     }
-
-    .producto li{
-        display: flex;
-        flex-direction: column;
-        margin-top: 10px;
-    }
-    .producto li a{
-        font-size: 15px;
-    }
-    .texto{
-        display: none;
-        flex-direction: column;
-    }
-    .texto li a{
-        margin-right: 0%;
-        font-size: 12px;
-    }
-    .lista li:hover > ul{
-
-        display: flex;
-}*/
     .open
     {
         display: flex;
