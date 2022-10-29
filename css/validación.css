@@ -1,0 +1,50 @@
+body{
+    display: flex;
+    background: rgb(2, 105, 119);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 700px;
+}
+.cont-tabla{
+    background: url(../imagenes/fondos/fotoperro.jpg);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+}
+
+table{
+    
+    border: 2px solid rgb(2, 105, 119);
+    width: 800px;
+    height: 500px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+ th{
+    text-align: center;
+    border: 2px solid rgb(2, 105, 119);
+    height: 40px;
+}
+ td{
+    border: 2px solid rgb(2, 105, 119);
+    height: 30px;
+}
+.Dato{
+    padding-left: 15px;
+}
+button{
+    cursor: pointer;
+    border: none;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 45px
+}

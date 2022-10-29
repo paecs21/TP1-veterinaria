@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/validación.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+  <h1>La siguiente información a sido enviada a nuestra veterinaria, será contactado lo más pronto posible</h1>
+ <div class="cont-tabla">
+    <table>
+        <tr>
+          <th>Dato Pedido</th>
+          <th>Valor Recibido</th>
+        </tr>
+        
+        <script >
+          var args = location.search.substr(1).split('&');
+          for (var i = 0; i < args.length; ++i) {
+            var parts = args[i].split('=');
+            if (parts != null) {
+              var field = parts[0];
+              var value = parts[1];
+              if (value == null) {
+                value = "null"
+              }   
+              else {
+                value =unescape(value.replace(/\+/g, ' '));
+              }
+    
+              document.writeln('<tr><td class="Dato">' + field + '</td>');
+              document.writeln('<td align="center">' + value + '</td></tr>');
+            }
+          }
+        </script>
+      </table>
+ </div>
+  
+  <a href="contacto.html"><button>volver</button></a>
+</body>
+</html>
