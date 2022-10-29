@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Roboto+Serif:ital,opsz,wght@1,8..144,100&family=Stick+No+Bills:wght@500&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
 }
+
 
 body{
     background: url(../imagenes/fondos/paws-6757808_1280.png);
@@ -9,6 +12,12 @@ body{
     position: relative;
     display: flex;
     flex-direction: column;
+}
+p{
+    font-family: 'Roboto Serif', serif;
+}
+h1,h2,h3{
+    font-family: 'DM Serif Display', serif;
 }
  /*------------------------------------------------MENÚ-----------------------------------------------------------------------*/
 
@@ -54,12 +63,13 @@ header{
     margin: 35px 0px;    
 }
 .cajaDeBotones a{
+    font-family: 'Stick No Bills', sans-serif;
     color: white;
     text-decoration: none;
     text-transform: uppercase;   /*transforma en mayusculas todas las letras*/
     letter-spacing: 1px;
     margin: 0px 25px;
-    font-size: 22px;
+    font-size: 30px;
 }
 .cajaDeBotones a:hover{
     border-bottom: 1px solid gray;
